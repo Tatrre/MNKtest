@@ -67,3 +67,4 @@ if __name__ == "__main__":
     '''
     export = pandas.read_sql(export_querry, conn)
     export.to_csv('export.csv', sep=';', index=False)
+    upload('export.csv')
